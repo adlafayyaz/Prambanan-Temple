@@ -1,0 +1,101 @@
+:root {
+  --primary-color: #3a2a1a;
+  --secondary-color: #bfa67a;
+  --background-color: #d7c4a3;
+  --color-textb: #000000;
+  --color-textw: #ffffff;
+  --font-family: "Playfair Display", serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--background-color);
+  color: var(--color-textb);
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  width: 100%;
+  padding: 20px 40px;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  background-color: var(--secondary-color);
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar nav {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.logo a {
+  color: var(--color-textb);
+  text-decoration: none;
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+}
+
+.navbar ul li a {
+  font-family: var(--font-family);
+  color: var(--color-textb);
+  text-decoration: none;
+  font-size: 20px;
+}
+
+/* HOME SECTION */
+.home-section {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 0 80px;
+  background: url("/assets/prambanan.jpg") center/cover no-repeat;
+}
+
+.home-text {
+  position: relative;
+  z-index: 1;
+  max-width: 800px;
+}
+
+.home-text h1 {
+  font-size: 48px;
+  color: var(--primary-color);
+}
+
+.home-text p {
+  font-size: 20px;
+  color: var(--color-textb)
+}
+
+.home-buttons {
+  margin-top: 30px;
+  display: flex;
+  gap: 20px;
+}
+
+.btn {
+  padding: 14px 30px;
+  border-radius: 40px;
+  text-decoration: none;
+  background-color: var(--primary-color);
+  color: var(--color-textw);
+  font-size: 16px;
+  display: inline-block;
+}
